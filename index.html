@@ -1,75 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch'A'Sketch Project</title>
-    
+
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-   <div class="full-container">
-    <div class="heading">
-        <h1>
-            <div class="first-word">Etch</div> 
-            <div class="second-word">'A'</div>
-            <div class="third-word">Sketch</div>
-        </h1>
-    </div>
-    <main>
-        <div class="container">
-            <div class="options-container">
-                <div class="modes-container">
-                    <h2>Mode Picker</h2>
-                    <div>
-                        <input type="button" value="Forest Mode" class="btn" id="forest">
-                        <input type="button" value="Ocean Mode" class="btn" id="ocean">
-                    </div>
-                    <div>
-                        <input type="button" value="Lava Mode" class="btn" id="lava">
-                        <input type="button" value="Color Mode" class="btn" id="colorPicker">
-                    </div>
-                </div>
-                <div class="color-container">
-                    <h2>Color Picker</h2>
-                    <input type="color" id="color" value="#000000">
-                </div>
-                <div class="tools-container">
-                    <h2>Tools</h2>
-                    <div>
-                        <input type="button" value="Eraser" class="btn" id="erase"> 
-                        <input type="button" value="Clear" class="btn" id="clear">
-                    </div>
-                </div>
-                <div class="custom-grid-container">
-                    <h2>Grid Scale</h2>
-                    <div>
-                        <input type="button" value="Small" id="small" class="btn">
-                        <input type="button" value="Medium" id="medium" class="btn">
-                    </div>
-                    <div>
-                        <input type="button" value="Large" id="large" class="btn">
-                        <input type="button" value="Giga" id="giga" class="btn">
-                    </div>
-                    <div>
-                        <h2>Grid Color: </h2>
-                        <input type="color" value="#f0f0f0" id="gridColor">
-                    </div>
-                </div>
-            </div>
-            <div class="grid-container">
-                <!--Grid-->
-            </div>
+    <div class="full-container">
+        <div class="heading">
+            <h1>
+                <div class="first-word">Etch</div>
+                <div class="second-word">'A'</div>
+                <div class="third-word">Sketch</div>
+            </h1>
         </div>
-    </main>
-   </div>
+        <main>
+            <div class="container">
+                <div class="options-container">
+                    <div class="modes-container">
+                        <h2>Mode Picker</h2>
+                        <div>
+                            <input type="button" value="Forest Mode" class="btn" id="forest">
+                            <input type="button" value="Ocean Mode" class="btn" id="ocean">
+                        </div>
+                        <div>
+                            <input type="button" value="Lava Mode" class="btn" id="lava">
+                            <input type="button" value="Color Mode" class="btn" id="colorPicker">
+                        </div>
+                    </div>
+                    <div class="color-container">
+                        <h2>Color Picker</h2>
+                        <input type="color" id="color" value="#000000" class="color-input">
+                    </div>
+                    <div class="tools-container">
+                        <h2>Tools</h2>
+                        <div>
+                            <input type="button" value="Eraser" class="btn" id="erase">
+                            <input type="button" value="Clear" class="btn" id="clear">
+                        </div>
+                    </div>
+                    <div class="custom-grid-container">
+                        <h2>Grid Scale</h2>
+                        <div>
+                            <input type="button" value="Small" id="small" class="btn">
+                            <input type="button" value="Medium" id="medium" class="btn">
+                        </div>
+                        <div>
+                            <input type="button" value="Large" id="large" class="btn">
+                            <input type="button" value="Giga" id="giga" class="btn">
+                        </div>
+                        <div>
+                            <h2>Grid Color: </h2>
+                            <input type="color" value="#f0f0f0" id="gridColor" class="color-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="grid-container">
+                    <!--Grid-->
+                </div>
+            </div>
+        </main>
+    </div>
     <footer>
-        <span>Challange by <a href="https://www.theodinproject.com/paths" blank_>The Odin Project</a></span>
-        <span>Coded By <a href="https://github.com/AtanasovCode" blank_>Ljupce Atanasov</a></span>
+        <span>Coded by <a href="https://github.com/AtanasovCode">Ljupce Atanasov</a></span>
     </footer>
 </body>
+
 </html>

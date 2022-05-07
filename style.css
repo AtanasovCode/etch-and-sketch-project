@@ -21,6 +21,7 @@
 }
 
 body {
+    overflow-x: hidden;
     min-height: 100vh;
     background-color: var(--main-bg-color);
     color: var(--font-color);
@@ -30,7 +31,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 96vh;
+    height: 100vh;
 }
 
 .heading {
@@ -136,6 +137,10 @@ input[type="color"] {
     background-color: var(--grid-bg-color);
 }
 
+.options-container {
+    width: 500px;
+}
+
 .cell {
     border: 1px solid var(--grid-border-color);
 }
@@ -145,7 +150,7 @@ footer {
     background-color: #222;
     color: white;
     width: 100vw;
-    height: 4vh;
+    height: 30px;
     padding: 10px;
     display: flex;
     -ms-flex-align: center;
@@ -163,7 +168,7 @@ footer span {
 
 
 @media only screen and (max-width: 1150px) {
-    body {
+    .full-container {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -176,9 +181,23 @@ footer span {
 }
 
 @media only screen and (max-width: 900px) {
+    .full-container {
+        height:min-content;
+        margin: 30px;
+    }
     .container {
         display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
         flex-direction: column-reverse;
+    }
+    .btn {
+        width: 40vw;
+    }
+
+    input[type="color"] {
+        width: 40vw;
     }
 }
 
@@ -202,6 +221,10 @@ footer span {
 }
 
 @media only screen and (max-width: 430px) {
+    .container {
+        padding-top: 30px;
+    }
+
     .heading {
         font-size: 26px;
     }
