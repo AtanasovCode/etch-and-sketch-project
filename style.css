@@ -39,10 +39,11 @@ body {
     font-weight: 700;
     font-size: 32px;
     text-align: center;
-    width: 20vw;
+    width: 25vw;
     display: flex;
     align-items: center;
     justify-content: center;
+    align-self: center;
 }
 /*======HEADING COLOR========*/
 .first-word {
@@ -58,7 +59,6 @@ body {
 
 
 main {
-    width: 80vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -70,12 +70,9 @@ main {
     display: flex;
     padding: 30px;
     border-radius: 20px;
+    width: 850px;
 }
 
-
-.options-container {
-    width: 300px;
-}
 
 .options-container div {
     margin-bottom: 7px;
@@ -132,6 +129,7 @@ input[type="color"] {
 .grid-container {
     display: grid;
     width: 500px;
+    min-width: 500px;
     height: 500px;
     align-self: center;
     background-color: var(--grid-bg-color);
@@ -167,7 +165,7 @@ footer span {
 }
 
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1360px) {
     .full-container {
         display: flex;
         flex-direction: column;
@@ -182,7 +180,7 @@ footer span {
 
 @media only screen and (max-width: 900px) {
     .full-container {
-        height:min-content;
+        height: min-content;
         margin: 30px;
     }
     .container {
@@ -191,6 +189,7 @@ footer span {
         align-items: center;
         justify-content: center;
         flex-direction: column-reverse;
+        width: 550px;
     }
     .btn {
         width: 40vw;
@@ -204,8 +203,15 @@ footer span {
 @media only screen and (max-width: 640px) {
     .container {
         padding: 15px;
+        display: flex;
+        text-align: center;
+        width: 300px;
     }
 
+    .heading {
+        font-size: 26px;
+    }
+    
     .options-container {
         display: flex;
         flex-direction: column;
@@ -214,23 +220,31 @@ footer span {
         text-align: center;
     }
 
-    .grid-container {
-        width: 350px;
-        height: 350px;
-    }
-}
-
-@media only screen and (max-width: 430px) {
-    .container {
-        padding-top: 30px;
-    }
-
-    .heading {
-        font-size: 26px;
+    .options-container div {
+        display: flex;
+        flex-direction: column;
     }
 
     .grid-container {
         width: 250px;
         height: 250px;
+        min-width: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+    .container {
+        padding-top: 30px;
+        width: 250px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+
+    .grid-container {
+        width: 200px;
+        height: 200px;
     }
 }
